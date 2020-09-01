@@ -7,6 +7,6 @@ function findMatching(arr, str){
 
 function fuzzyMatch(arr, str){
   return arr.filter(s => {
-    return s.match(str)
+    return s.startsWith(str)
   })
 }
