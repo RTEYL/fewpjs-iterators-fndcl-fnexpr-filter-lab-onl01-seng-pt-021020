@@ -10,3 +10,7 @@ function fuzzyMatch(arr, str){
     return s.startsWith(str)
   })
 }
+
+function matchName(arr, str) {
+  return arr.map(obj => obj.name.match(str))
+}
